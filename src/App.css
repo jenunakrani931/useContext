@@ -1,0 +1,148 @@
+.body {
+  background-color: #121114;
+}
+.rounded-img {
+  border-radius: 24px;
+  width: 210px;
+  height: 260px;
+}
+.text-align-end {
+  text-align: center;
+}
+.cart-items {
+  list-style: none;
+  margin: 0;  
+  padding: 0;
+  max-height: 20rem;
+  overflow: auto;
+}
+.hide{
+  display: none;
+  width: 200px;
+}
+
+.type-number{
+  width: 210px;
+}
+.total {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.total label {
+  font-size: 18px;
+}
+.actions {
+  /* justify-content: end; */
+  display: flex;
+}
+.font-size_{
+  font-size: 10px;
+}
+.search-cursor{
+  cursor: none;
+}
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  width: 500px;
+}
+
+.actions .button--alt {
+  background-color: #8036e0;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  background-color: rgba(14, 14, 14, 0.5);
+}
+
+.modal_ {
+  position: fixed;
+  top: 30vh;
+  left: 30%;
+  width: 500px;
+  background-color: #121114;
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 30;
+  animation: slide-down 300ms ease-out forwards;
+}
+.text_ {
+  text-align: center;
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 320px — px */
+@media only screen and (max-width: 1024px) {
+  .rounded-img {
+    border-radius: 24px;
+    width: 220px;
+  }
+}
+@media (max-width: 425px) {
+  .rounded-img {
+    border-radius: 24px;
+    width: 390px;
+    height: 400px;
+  }
+  .modal_ {
+    position: fixed;
+    top: 56vh;
+    left: 2%;
+    width: 420px;
+    background-color: #e6e6e6;
+    padding: 1rem;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 30;
+    animation: slide-down 300ms ease-out forwards;
+  }
+}
+@media (max-width: 375px) {
+  .rounded-img {
+    border-radius: 24px;
+    width: 350px;
+    height: 380px;
+  }
+}
+@media (max-width: 320px) {
+  .rounded-img {
+    border-radius: 24px;
+    width: 300px;
+    height: 320px;
+  }
+  .modal_ {
+    position: fixed;
+    top: 56vh;
+    left: 2%;
+    width: 300px;
+    background-color: #121114;
+    padding: 1rem;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 30;
+    animation: slide-down 300ms ease-out forwards;
+  }
+}
